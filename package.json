@@ -1,5 +1,5 @@
 {
-  "name": "esbuild-plugin-macros",
+  "name": "esbuild-plugin-html",
   "version": "1.0.0",
   "description": "Runs JavaScript at compile time",
   "main": "./src/index.js",
@@ -8,24 +8,24 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Commandtechno/esbuild-plugin-macros.git"
+    "url": "git+https://github.com/Commandtechno/esbuild-plugin-html.git"
   },
   "keywords": [
     "esbuild",
     "plugin",
     "macro",
     "esbuild-plugin",
-    "esbuild-macro",
-    "esbuild-plugin-macro",
-    "esbuild-macros",
-    "esbuild-plugin-macros"
+    "esbuild-html",
+    "esbuild-plugin-html",
+    "esbuild-html",
+    "esbuild-plugin-html"
   ],
   "author": "Commandtechno",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Commandtechno/esbuild-plugin-macros/issues"
+    "url": "https://github.com/Commandtechno/esbuild-plugin-html/issues"
   },
-  "homepage": "https://github.com/Commandtechno/esbuild-plugin-macros#readme",
+  "homepage": "https://github.com/Commandtechno/esbuild-plugin-html#readme",
   "devDependencies": {
     "@types/node": "^18.7.14",
     "esbuild": "^0.15.6"

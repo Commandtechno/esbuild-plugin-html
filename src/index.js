@@ -42,8 +42,17 @@ module.exports = (plugins, options) => ({
                       text => (node.content = text)
                     );
 
-                  if (node.attrs?.src && !node.attrs.src.startsWith("http")) virtualBuild.addFile(node.attrs.src);
-                  if (node.attrs?.href && !node.attrs.href.startsWith("http")) virtualBuild.addFile(node.attrs.href);
+                  if (node.attrs?.src && !node.attrs.src.startsWith("http")) {
+                    if (node.attrs.src.startsWith("external:"))
+                      node.attrs.src = node.attrs.src.replace("external:", "");
+                    else virtualBuild.addFile(node.attrs.src);
+                  }
+
+                  if (node.attrs?.href && !node.attrs.href.startsWith("http")) {
+                    if (node.attrs.href.startsWith("external:"))
+                      node.attrs.href = node.attrs.href.replace("external:", "");
+                    else virtualBuild.addFile(node.attrs.href);
+                  }
                 })()
               );
 

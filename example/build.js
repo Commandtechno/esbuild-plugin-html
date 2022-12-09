@@ -4,9 +4,9 @@ esbuild.build({
   entryPoints: ["index.html"],
   outdir: "build",
   bundle: true,
-  minify: true,
-  plugins: [require("..")()],
+  // minify: true,
+  plugins: [require("../src")()],
   loader: {
-    ".png": "file",
-  },
+    ".png": "file"
+  }
 });
